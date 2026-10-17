@@ -16,7 +16,7 @@ cask "terminalia" do
   # al publicar la primera versión con Sparkle, para que `brew upgrade` no compita con ella
   # (solo actualizará con --greedy).
   # auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Terminalia.app"
 
