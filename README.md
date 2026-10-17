@@ -3,10 +3,10 @@
 Tap de Homebrew de [Terminalia](https://terminalia.dev), el cliente SSH nativo para Mac.
 
 ```bash
-brew trust --cask agustinalonsocantoli/tap/terminalia && brew install --cask agustinalonsocantoli/tap/terminalia
+brew tap agustinalonsocantoli/tap && brew trust --cask agustinalonsocantoli/tap/terminalia && brew install --cask agustinalonsocantoli/tap/terminalia
 ```
 
-Homebrew 7+ no carga casks de taps de terceros sin `brew trust`; por eso el comando confía primero solo en este cask (no en todo el tap).
+Homebrew 7+ no añade taps de terceros solo ni carga sus casks sin `brew trust`: por eso el comando añade el tap, confía únicamente en este cask (no en todo el tap) e instala.
 Requiere macOS 14 (Sonoma) o posterior.
 
 > Terminalia todavía no está notarizada por Apple. La primera vez que la abras, macOS la bloqueará:
@@ -39,7 +39,7 @@ Homebrew exige que el repo se llame `homebrew-<nombre>`; `brew` lo abrevia a `<u
 3. Prueba en limpio:
 
    ```bash
-   brew trust --cask agustinalonsocantoli/tap/terminalia && brew install --cask agustinalonsocantoli/tap/terminalia
+   brew tap agustinalonsocantoli/tap && brew trust --cask agustinalonsocantoli/tap/terminalia && brew install --cask agustinalonsocantoli/tap/terminalia
    brew audit --cask --online agustinalonsocantoli/tap/terminalia
    brew livecheck --cask agustinalonsocantoli/tap/terminalia
    ```
