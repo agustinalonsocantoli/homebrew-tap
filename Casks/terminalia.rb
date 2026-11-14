@@ -1,6 +1,6 @@
 cask "terminalia" do
-  version "1.6.0"
-  sha256 "f2458a83563704dad7e4a24a8e6e7da7444ecb527101a435658830696629e61f"
+  version "1.7.0"
+  sha256 "247b9ce2af034c294590291e06a1c890dc59a51ea351e9e0119d4767dc76de57"
 
   url "https://terminalia.dev/downloads/Terminalia-#{version}.dmg"
   name "Terminalia"
